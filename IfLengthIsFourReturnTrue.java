@@ -1,3 +1,5 @@
+package classes;
+
 public class IfLengthIsFourReturnTrue {
   public static void main(String[] args) {
     System.out.println(isFour("a23"));
