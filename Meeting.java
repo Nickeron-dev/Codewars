@@ -1,31 +1,43 @@
+package classes;
+
 import java.util.Arrays;
 import java.util.ArrayList;
 
 class Meeting {
-    public static String meeting(String s) {
+  public static String meeting(String s) {
       s = s.toUpperCase();
       String[] array = s.split(";");
-      System.out.println("This is actial liine\n");
-      System.out.println(Arrays.toString(array));
+      // using ArrayList just because I need more practice with it
       ArrayList<String> map = new ArrayList<String>();
+
+      // Filling ArrayList with names and last names
       for(int i = 0; i < array.length; i++) {
         String[] person = array[i].split(":");
-        System.out.println("\n This is names:\n " + person[0] + " " + person[1]);
         map.add(person[0]);
         map.add(person[1]);
       }
-      System.out.println("Map: " + map);
 
+      // 2D array to get last name and name easier
       String[][] lastNames = new String[map.size() / 2][2];
-      System.out.println("\n");
       for (int i = 0, j = 0; i < map.size(); i += 2, j++) {
-        System.out.println(map.get(i));
         lastNames[j][0] = map.get(i);
         lastNames[j][1] = map.get(i + 1);
       }
-      System.out.println(Arrays.deepToString(lastNames));
-      Arrays.sort(lastNames);
-      System.out.println("\n" + Arrays.toString(lastNames));
+
+      // making proper output and moving everything into 1D array
+      // because only it can be sorted by Arrays.sort(...);
+      String[] answer = new String[lastNames.length];
+      for(int i = 0; i < lastNames.length; i++) {
+        answer[i] = "(";
+        answer[i] += lastNames[i][1];
+        answer[i] += ", " + lastNames[i][0] + ")";
+      }
+      Arrays.sort(answer);
+
+      s = ""; // clearing old variable and using it to reduce space usage
+      for (int i = 0; i < answer.length; i++) {
+        s += answer[i]; // filling String for answer
+      }
       return s;
     }
 }
