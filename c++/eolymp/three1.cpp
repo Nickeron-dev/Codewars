@@ -41,7 +41,7 @@ int main()
     //lst.(10000);
 
     //vector<int> arr(n);
-    lst.push_back(std::pair<long, int>(n, 0));
+    lst.push_back(std::pair<long long, int>(n, 0));
 //    std::for_each(lst.begin(), lst.end(), [&](auto &item) {
 //        cout << item.first << " " << item.second << endl;
 //    });
