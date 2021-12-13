@@ -1,6 +1,11 @@
-int recursive_loop(int value)
-{
-  return value * 2;
+int recursive_loop(int current_value, int n)
+{ 
+  if (n > 1)
+  {
+    n /= 2;
+    current_value = recursive_loop(++current_value, n);
+  }
+  return current_value;
 }
 
 unsigned int squaresNeeded(long long n) {
@@ -10,16 +15,9 @@ unsigned int squaresNeeded(long long n) {
   }
   
   int current_value = 1;
-  //int func_value = recursive_loop(current_value);
-  if (current_value <= n)
-  {
-    current_value = recursive_loop(current_value);
-  }
-  else
-  {
-    return current_value;
-  }
+  current_value = recursive_loop(current_value, n);
   return current_value;
 }
+
 
 
