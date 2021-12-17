@@ -32,7 +32,7 @@ int main()
 		}
 	}
 	
-	fout << answer;
+	fout << answer / 2;
         fin.close();
         fout.close();
         return 0;
