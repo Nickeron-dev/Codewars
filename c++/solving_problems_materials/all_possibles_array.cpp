@@ -1,42 +1,42 @@
 #include <iostream>
 #include <vector>
 
-void recursive_all_possibles(int amount, std::vector<int> &s,
-        std::vector<int> cur, std::vector<std::vector<int>> &v)
+std::vector<std::vector<int>> result;
+std::vector<int> given = {1, 2, 3, 4};
+std::vector<int> current_permutations; // empty at the beginning
+int amount = 3; // amount of characters in 1 permutation
+
+void recursive_all_possibles(std::vector<int> cur)
 {
         if (cur.size() >= amount)
         {
-                v.push_back(cur);
-                std::vector<int> current;
-                for (int i = 0; i < cur.size() - 2; i++)
-                {
-                        current.push_back(cur[i]);
-                }
-                cur = current;
+                result.push_back(cur);
                 return;
         }
-        for (int i = 0; i < s.size(); i++)
+        for (int i = 0; i < given.size(); i++)
         {
-                cur.push_back(s[i]);
-                recursive_all_possibles(amount, s, cur, v);
+                std::vector<int> current(cur.size() + 1);
+                for(int j = 0; j < cur.size(); j++)
+                {
+                        current[j] = cur[j];
+                }
+                current[current.size() - 1] = given[i];
+                recursive_all_possibles(current);
         }
         return;
 }
 
 int main()
 {
-        std::vector<int> main_lst = {1, 2, 3, 4};
-        std::vector<std::vector<int>> result;
-        std::vector<int> start_vec;
-        recursive_all_possibles(3, main_lst, start_vec, result);
-        for (auto e : result)
+        recursive_all_possibles(current_permutations);
+        for (int i = 0; i < result.size(); i++)
         {
           std::cout << "{";
-          for (auto e_inside : e)
+          for (int j = 0; j < result[i].size(); j++)
           {
-            std::cout << e_inside << "\n";
+            std::cout << result[i][j];
           }
-          std::cout << "}";
+          std::cout << "}\n";
         }
         return 0;
 }
