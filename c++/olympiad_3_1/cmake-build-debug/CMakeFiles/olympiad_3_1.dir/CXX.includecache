@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/illiakoskin/Documents/git/Codewars/c++/olympiad_3_1/main.cpp
+iostream
+-
+vector
+-
+list
+-
+
