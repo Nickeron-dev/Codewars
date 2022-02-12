@@ -28,8 +28,10 @@ long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=0
-FILE_NAME_0=1158;C++;0;EUTF-8;1;1;0;%2FUsers%2Filliakoskin%2FDocuments%2Fgit%2FCodewars%2Fc%2B%2B%2Fcodeforces%2F1100%2Ftaxi.cpp;0;4
+current_page=1
+FILE_NAME_0=1062;C++;0;EUTF-8;1;1;0;%2FUsers%2Filliakoskin%2FDocuments%2Fgit%2FCodewars%2Fc%2B%2B%2Fcodeforces%2F1100%2Ftaxi.cpp;0;4
+FILE_NAME_1=308;C++;0;EUTF-8;1;1;0;%2FUsers%2Filliakoskin%2FDocuments%2Fgit%2FCodewars%2Fc%2B%2B%2Fcodeforces%2F1100%2Finteresting_drink.cpp;0;4
+FILE_NAME_2=2586;C++;0;EUTF-8;1;1;0;%2FLibrary%2FDeveloper%2FCommandLineTools%2FSDKs%2FMacOSX.sdk%2Fusr%2Finclude%2Fbits%2Fstdc%2B%2B.h;0;4
 
 [VTE]
 last_dir=/Users/illiakoskin
@@ -43,5 +45,5 @@ C++FT_01_CM=g++ --std=c++17 "%f" -o execs/"%e"
 C++FT_01_WD=
 filetypes=C++;
 EX_00_LB=_Execute
-EX_00_CM="./execs/%e"
+EX_00_CM=time "./execs/%e"
 EX_00_WD=
