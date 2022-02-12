@@ -18,8 +18,8 @@ detect_indent_width=false
 indent_mode=2
 
 [project]
-name=1100
-base_path=/Users/illiakoskin/Documents/git/Codewars/c++/codeforces/1100
+name=global_round_19
+base_path=/Users/illiakoskin/Documents/git/Codewars/c++/codeforces/contests
 description=
 file_patterns=
 
@@ -28,14 +28,16 @@ long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=1
-FILE_NAME_0=1062;C++;0;EUTF-8;1;1;0;%2FUsers%2Filliakoskin%2FDocuments%2Fgit%2FCodewars%2Fc%2B%2B%2Fcodeforces%2F1100%2Ftaxi.cpp;0;4
-FILE_NAME_1=264;C++;0;EUTF-8;1;1;0;%2FUsers%2Filliakoskin%2FDocuments%2Fgit%2FCodewars%2Fc%2B%2B%2Fcodeforces%2F1100%2Finteresting_drink.cpp;0;4
+current_page=0
+FILE_NAME_0=217;C++;0;EUTF-8;1;1;0;%2FUsers%2Filliakoskin%2FDocuments%2Fgit%2FCodewars%2Fc%2B%2B%2Fcodeforces%2Fcontests%2FA.cpp;0;4
 
 [VTE]
 last_dir=/Users/illiakoskin
 
 [build-menu]
+EX_00_LB=_Execute
+EX_00_CM="./execs/%e"
+EX_00_WD=
 C++FT_00_LB=_Compile
 C++FT_00_CM=g++ --std=c++17 "%f" -o execs/"%e"
 C++FT_00_WD=
@@ -43,6 +45,3 @@ C++FT_01_LB=_Build
 C++FT_01_CM=g++ --std=c++17 "%f" -o execs/"%e"
 C++FT_01_WD=
 filetypes=C++;
-EX_00_LB=_Execute
-EX_00_CM=time "./execs/%e"
-EX_00_WD=
