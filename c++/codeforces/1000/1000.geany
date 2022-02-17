@@ -27,8 +27,9 @@ long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=0
-FILE_NAME_0=468;C++;0;EUTF-8;1;1;0;%2FUsers%2Filliakoskin%2FDocuments%2Fgit%2FCodewars%2Fc%2B%2B%2Fcodeforces%2F1000%2Flecture.cpp;0;4
+current_page=1
+FILE_NAME_0=62;C++;0;EUTF-8;1;1;0;%2FUsers%2Filliakoskin%2FDocuments%2Fgit%2FCodewars%2Fc%2B%2B%2Fcodeforces%2F1000%2Flecture.cpp;0;4
+FILE_NAME_1=122;C++;0;EUTF-8;1;1;0;%2FUsers%2Filliakoskin%2FDocuments%2Fgit%2FCodewars%2Fc%2B%2B%2Fcodeforces%2F1000%2Fnumber_of_positions.cpp;0;4
 
 [VTE]
 last_dir=/Users/illiakoskin
