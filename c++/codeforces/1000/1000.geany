@@ -21,15 +21,27 @@ indent_mode=2
 name=1000
 base_path=/Users/illiakoskin/Documents/git/Codewars/c++/codeforces/1000
 description=
+file_patterns=
 
 [long line marker]
 long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=1
+current_page=3
 FILE_NAME_0=62;C++;0;EUTF-8;1;1;0;%2FUsers%2Filliakoskin%2FDocuments%2Fgit%2FCodewars%2Fc%2B%2B%2Fcodeforces%2F1000%2Flecture.cpp;0;4
-FILE_NAME_1=122;C++;0;EUTF-8;1;1;0;%2FUsers%2Filliakoskin%2FDocuments%2Fgit%2FCodewars%2Fc%2B%2B%2Fcodeforces%2F1000%2Fnumber_of_positions.cpp;0;4
+FILE_NAME_1=152;C++;0;EUTF-8;1;1;0;%2FUsers%2Filliakoskin%2FDocuments%2Fgit%2FCodewars%2Fc%2B%2B%2Fcodeforces%2F1000%2Fnumber_of_positions.cpp;0;4
+FILE_NAME_2=1075;C++;0;EUTF-8;1;1;0;%2FUsers%2Filliakoskin%2FDocuments%2Fgit%2FCodewars%2Fc%2B%2B%2Fcodeforces%2F1000%2Fbogosort.cpp;0;4
+FILE_NAME_3=334;C++;0;EUTF-8;1;1;0;%2FUsers%2Filliakoskin%2FDocuments%2Fgit%2FCodewars%2Fc%2B%2B%2Fcodeforces%2F1000%2Flongest_uncommon_sequence.cpp;0;4
 
 [VTE]
 last_dir=/Users/illiakoskin
+
+[build-menu]
+C++FT_00_LB=_Compile
+C++FT_00_CM=g++ -ansi -pedantic -Wall -Wextra -Weffc++ --std=c++17 "%f" -o execs/"%e"
+C++FT_00_WD=
+C++FT_01_LB=_Build
+C++FT_01_CM=g++ -ansi -pedantic -Wall -Wextra -Weffc++ --std=c++17 "%f" -o execs/"%e"
+C++FT_01_WD=
+filetypes=C++;
