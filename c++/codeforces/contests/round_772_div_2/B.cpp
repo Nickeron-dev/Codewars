@@ -33,14 +33,13 @@ int main()
 			{
 				if (vec[i] > vec[i - 1] && vec[i] > vec[i + 1])
 				{
-					if ( (i + 2 < vec.size() && vec[i + 2] > vec[i + 1]) 
-						&& (vec[i - 1] < vec[i + 2]))
+					if (i + 2 < vec.size())
 					{
-						vec[i + 1] = vec[i + 2];
+						vec[i + 1] = max(vec[i + 1], vec[i + 2]);
 					}
 					else
 					{
-						vec[i + 1] = vec[i];
+						vec[i + 1] = vec[i + 1];
 					}
 					counter++;
 				}
