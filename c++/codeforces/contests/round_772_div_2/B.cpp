@@ -35,11 +35,11 @@ int main()
 				{
 					if (i + 2 < vec.size())
 					{
-						vec[i + 1] = max(vec[i + 1], vec[i + 2]);
+						vec[i + 1] = max(vec[i], vec[i + 2]);
 					}
 					else
 					{
-						vec[i + 1] = vec[i + 1];
+						vec[i + 1] = vec[i];
 					}
 					counter++;
 				}
