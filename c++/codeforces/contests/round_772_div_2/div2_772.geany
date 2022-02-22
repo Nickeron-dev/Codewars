@@ -21,15 +21,31 @@ indent_mode=2
 name=div2_772
 base_path=/Users/illiakoskin/Documents/git/Codewars/c++/codeforces/contests/round_772_div_2
 description=
+file_patterns=
 
 [long line marker]
 long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=1
+current_page=10
 FILE_NAME_0=803;C++;0;EUTF-8;1;1;0;%2FUsers%2Filliakoskin%2FDocuments%2Fgit%2FCodewars%2Fc%2B%2B%2Fcodeforces%2Fcontests%2Fround_772_div_2%2FB.cpp;0;4
-FILE_NAME_1=326;C++;0;EUTF-8;1;1;0;%2FUsers%2Filliakoskin%2FDocuments%2Fgit%2FCodewars%2Fc%2B%2B%2Fcodeforces%2F1000%2Flittle_artem.cpp;0;4
+FILE_NAME_1=279;C++;0;EUTF-8;1;1;0;%2FUsers%2Filliakoskin%2FDocuments%2Fgit%2FCodewars%2Fc%2B%2B%2Fcodeforces%2F1000%2Flittle_artem.cpp;0;4
+FILE_NAME_2=91;C++;0;EUTF-8;1;1;0;%2FUsers%2Filliakoskin%2FDocuments%2Fgit%2FBasics-Of-CPP%2Fboost%2Ftest%2Fwithout_params.cpp;0;4
+FILE_NAME_3=0;C++;0;EUTF-8;1;1;0;%2FUsers%2Filliakoskin%2FDocuments%2Fgit%2FBasics-Of-CPP%2Fboost%2Ftest%2Fdata-driven.cpp;0;4
+FILE_NAME_4=730;C++;0;EUTF-8;1;1;0;%2FUsers%2Filliakoskin%2FDocuments%2Fgit%2FCodewars%2Fc%2B%2B%2Fcodeforces%2F1000%2Fsimple_xml.cpp;0;4
+FILE_NAME_5=270;C++;0;EUTF-8;1;1;0;%2FUsers%2Filliakoskin%2FDocuments%2Fgit%2FBasics-Of-CPP%2Fboost%2Ftest%2Ftemplate_test.cpp;0;4
+FILE_NAME_6=402;C++;0;EUTF-8;1;1;0;%2FUsers%2Filliakoskin%2FDocuments%2Fgit%2FBasics-Of-CPP%2Fboost%2Ftest%2Fparametrized_test.cpp;0;4
+FILE_NAME_7=225;C++;0;EUTF-8;1;1;0;%2FUsers%2Filliakoskin%2FDocuments%2Fgit%2FBasics-Of-CPP%2Fboost%2Fgil%2Fcreate_png.cpp;0;4
+FILE_NAME_8=74;C++;0;EUTF-8;1;1;0;%2FUsers%2Filliakoskin%2FDocuments%2Fgit%2FBasics-Of-CPP%2Fpython%2Fpython.cpp;0;4
+FILE_NAME_9=229;C++;0;EUTF-8;1;1;0;%2FUsers%2Filliakoskin%2FDocuments%2Fgit%2FCodewars%2Fc%2B%2B%2Fcodeforces%2F1000%2Ffibonacci_army.cpp;0;4
+FILE_NAME_10=257;C++;0;EUTF-8;1;1;0;%2FUsers%2Filliakoskin%2FDocuments%2Fgit%2FCodewars%2Fc%2B%2B%2Fcodeforces%2F1000%2Fup_the_hill.cpp;0;4
 
 [VTE]
 last_dir=/Users/illiakoskin
+
+[build-menu]
+C++FT_00_LB=_Compile
+C++FT_00_CM=g++ -ansi -pedantic -Wall -Wextra -Weffc++ --std=c++17 "%f" -o execs/"%e"
+C++FT_00_WD=
+filetypes=C++;
