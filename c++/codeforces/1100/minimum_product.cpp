@@ -12,61 +12,31 @@ void solution(void)
 {
 	ll a, b, x, y, n;
 	cin >> a >> b >> x >> y >> n;
-	long long ans = 1e18;
-	for (int i = 0; i < 2; ++i) {
-			int da = min(n, a - x);
-			int db = min(n - da, b - y);
-			ans = min(ans, (a - da) * 1ll * (b - db));
-			swap(a, b);
-			swap(x, y);
-		}
-		cout << ans << endl;
-	//if (a > b)
-	//{
-		//ll minus = min((b - y), n);
-		//n -= minus;
-		//b -= minus;
-		////while (b > y && n > 0)
-		////{
-			////b--;
-			////n--;
-		////}
-		//if (n > 0)
-		//{
-			//ll sec_minus = min((a - x), n);
-			//n -= sec_minus;
-			//a -= sec_minus;
-		//}
-		////while (a > x && n > 0)
-		////{
-			////a--;
-			////n--;
-		////}
-	//}
-	//else
-	//{
-		//ll minus = min((a - y), n);
-		//n -= minus;
-		//a -= minus;
-		//if (n > 0)
-		//{
-			//ll sec_minus = min((b - x), n);
-			//n -= sec_minus;
-			//b -= sec_minus;
-		//}
-		////while (a > y && n > 0)
-		////{
-			////a--;
-			////n--;
-		////}
-		////while (b > x && n > 0)
-		////{
-			////b--;
-			////n--;
-		////}
-	//}
-	////cout << "a: " << a << " b: " << b << '\n';
-	//cout << a * b << '\n';
+	
+	ll a_c1 = a, b_c1 = b, x_c1 = x, y_c1 = y, n_c1 = n;
+	ll minus_c1 = min((b_c1 - y_c1), n_c1);
+	n_c1 -= minus_c1;
+	b_c1 -= minus_c1;
+	if (n_c1 > 0)
+	{
+		ll sec_minus = min((a_c1 - x_c1), n_c1);
+		n_c1 -= sec_minus;
+		a_c1 -= sec_minus;
+	}
+	ll result_one = a_c1 * b_c1;
+	
+	ll minus = min((a - x), n);
+	n -= minus;
+	a -= minus;
+	if (n > 0)
+	{
+		ll sec_minus = min((b - y), n);
+		n -= sec_minus;
+		b -= sec_minus;
+	}
+	ll result_two = a * b;
+
+	cout << min(result_one, result_two) << '\n';
 }
 
 int main(void)
