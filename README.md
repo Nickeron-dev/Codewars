@@ -1,3 +1,6 @@
 # Codewars
- Solving codewars' tasks
- Main branch consists of final versions of kata solutions!
+ Solutions to problems from Codeforces, Informatic Olympiads, Codewars etc.
+
+# Languages I used
+* C++
+* Java
