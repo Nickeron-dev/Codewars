@@ -1,5 +1,4 @@
-//#include <bits/stdc++.h>
-#include <cmath>
+#include <bits/stdc++.h>
 
 using namespace std;
 
@@ -20,6 +19,12 @@ void solution(void)
 		cin >> val;
 		vec.push_back(val);
 	}
+	
+	int k = 0;
+	while(k < n && vec[k] == 1) {
+		k++;
+	}
+	cout << ((k == n) ^ (k % 2) ? "Second" : "First") << '\n';
 	
 }
 
